@@ -5,6 +5,7 @@ TARGET = QtCharts
 message($$QT_CONFIG)
 QT = core gui widgets
 DEFINES += QT_CHARTS_LIBRARY
+CONFIG += staticlib static
 contains(QT_COORD_TYPE, float): DEFINES += QT_QREAL_IS_FLOAT
 
 # Fix exports in static builds for applications linking charts module

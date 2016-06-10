@@ -9,6 +9,7 @@ IMPORT_VERSION = $$MODULE_VERSION
 
 # Only build qml plugin static if Qt itself is also built static
 !contains(QT_CONFIG, static): CONFIG -= static staticlib
+CONFIG += staticlib static
 
 include($$PWD/designer/designer.pri)
 

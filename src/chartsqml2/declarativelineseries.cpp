@@ -49,7 +49,7 @@ DeclarativeLineSeries::DeclarativeLineSeries(QObject *parent) :
 void DeclarativeLineSeries::handleCountChanged(int index)
 {
     Q_UNUSED(index)
-    emit countChanged(points().count());
+    emit countChanged(pointsVector().count());
 }
 
 qreal DeclarativeLineSeries::width() const
